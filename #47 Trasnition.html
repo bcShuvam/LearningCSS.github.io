@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Transition </title>
+	<link rel="shortcut icon" type="image/png" href="icons/social_style_1_css3-128.png">
+	<style type="text/css">
+		body{
+			font-family:arial;
+		}
+		#box{
+			width:150px;
+			height:150px;
+			background:pink;
+			transition-property: all;
+			transition-duration:2s;
+			transition-timing-function:cubic-bezier(0.1,0.7,1.0,0.1);
+			transition-delay:2s; 
+			margin-bottom:20px
+		}
+		#box:hover{
+			width:300px;
+			height:300px;
+			background:orange;
+		}
+		input{
+			width:180px;
+			height:14px;
+			height:;
+			transition:all 1s linear;
+		}
+		input:focus{
+			text-decoration:underline yellow solid;
+			color:lightgreen;
+			font-family:arial;
+			background:#333333;
+			width:250px;
+			height:20px;
+		}
+	</style>
+</head>
+<body>
+	<h1> CSS Transition </h1>
+	<div id="box"> </div>
+	<input type="text">
+</body>
+</html>

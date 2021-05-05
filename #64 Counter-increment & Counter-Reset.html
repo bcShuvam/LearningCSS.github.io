@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Counter-increment & Counter-Reset </title>
+	<link rel="shortcut icon" type="image/png" href="icons/social_style_1_css3-128.png">
+	<style type="">
+		body{
+			font-family:arial;padding:10px 0 0 20px;
+			counter-reset:my-counter;
+		}
+		h1{
+			font-size:32px;
+			margin-bottom: 35px;
+			color:green;
+			counter-reset:Chapter ;
+		}
+		h1::before{
+			content:'Section' counter(my-counter) ' : ';
+			counter-increment:my-counter;
+		}
+		h2::before{
+			content:counter(my-counter) '.' counter(Chapter) ' : ';
+			counter-increment:Chapter;
+		}
+	</style>
+</head>
+<body>
+
+	<h1> HTML and CSS </h1>	
+	<h2> HTML </h2>	
+	<h2> CSS </h2>
+	<h2> Bootstrap </h2>
+
+	<h1> JavaScript</h1>	
+	<h2> JavaScript </h2>	
+	<h2> jQuert </h2>	
+	<h2> JSON </h2>
+
+	<h1> Server Side </h1>	
+	<h2> SQL </h2>	
+	<h2> PHP </h2>
+</body>
+</html>

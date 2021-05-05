@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Scrollbar Styling </title>
+	<link rel="shortcut icon" type="image/png" href="icons/social_style_1_css3-128.png">
+	<style type="text/css">
+		body{
+			font-family:arial;
+		}
+		#test{
+			border:1px solid black;
+			width:200px;
+			height:300px;
+			overflow:auto;
+			margin:10px 0 0 100px;
+		}
+		#test::-webkit-scrollbar{
+			width:15px;
+			background:rgba(0,0,0,0.4);
+		}
+		#test::-webkit-scrollbar-track{
+			border-radius:10px;
+			background:rgba(240,100,50,0.5);
+		}
+		#test::-webkit-scrollbar-thumb{
+			border-radius:10px;
+			background:linear-gradient(orange,yellow);
+		}
+	</style>
+</head>
+<body>
+	<h1> CSS Scrollbar Styling </h1>
+	<div id="test">
+		Phasellus congue ante eget nulla bibendum gravida. Mauris a lacus ipsum. In hac habitasse platea dictumst. Donec non lorem et neque congue porttitor. In in nisi ac libero efficitur rhoncus vel in lorem. Vestibulum ornare tempus ex ac venenatis. Donec dictum augue sed dolor ullamcorper elementum. Quisque feugiat lacus nec odio convallis consequat. Ut tempor interdum lectus non fringilla. Vivamus ut eros eleifend, volutpat nunc vel, dictum nisl. Integer id vulputate enim. Aliquam commodo tempor velit sit amet tempus. Etiam sodales vehicula ante, non pellentesque diam varius id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu quam sagittis, suscipit lectus eu, dictum sem. Ut volutpat sapien quam, quis ultrices massa auctor sit amet.
+		Phasellus congue ante eget nulla bibendum gravida. Mauris a lacus ipsum. In hac habitasse platea dictumst. Donec non lorem et neque congue porttitor.
+	</div>
+</body>
+</html>

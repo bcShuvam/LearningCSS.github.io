@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Pseudo Elements </title>
+	<link rel="shortcut icon" type="image/png" href="icons/social_style_1_css3-128.png">
+	<style type="text/css">
+		body{
+			font-family:arial;
+			padding:10px 0 0 20px;
+		}
+		h1{
+			font-size:32px;
+			margin:0 0 35px 0;
+		}
+		.test{
+			font-size:32px;
+			margin:200px 0 0 50px;
+		}
+		p:hover::after{
+			/*Attribute Function*/
+			content:attr(data-caption);
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<h1>
+		CSS Pseudo Elements
+	</h1>
+
+	<p class="test" data-caption='Shuvam'> Lunatic </p>
+</body>
+</html>

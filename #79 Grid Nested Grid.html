@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title> Grid Nested Grid</title>
+	<link rel="shortcut icon" type="image/png" href="icons/social_style_1_css3-128.png">
+	<style type="text/css">
+		body{
+			font-family:arial;
+		}
+		.container{
+			background:#eee;
+			width:650;
+			margin:45px auto 0px;
+
+			display:grid;
+			grid-template-columns:repeat(2,1fr);
+			grid-template-rows:repeat(2,150px);
+			grid-gap:15px;
+			grid-auto-rows:100px;
+		}
+		.items{-
+			padding:10px;
+			font-size:20px;
+			color:#fff;
+			font-weight:bolder;
+		}
+		.item1{
+			background:orangered;
+		}
+		.item2{
+			background:yellowgreen;
+		}
+		.item3{
+			background:slateblue;
+			display:grid;
+			grid-template-columns:1fr 1fr;
+			grid-gap:10px;
+		}
+		.item4{
+			background:hotpink;
+		}
+		.item5{
+			background:royalblue;
+		}
+		.item6{
+			background:goldenrod;
+		}
+		.item7{
+			background:lightgreen;
+		}
+		.item8{
+			background:linear-gradient(red,yellow);
+		}
+		.item3 > div{
+			background:#fff;
+			color:orange;
+		}
+	</style>
+</head>
+<body>
+	<h1> LunaticShuvam : CSS Grid Nested Grid</h1>
+
+	<div class="container"> 
+		<div class="items item1"> First</div>
+		<div class="items item2"> Second </div>
+		<div class="items item3">
+			<div class="subitems1">A</div>
+			<div class="subitems2">B</div>
+			<div class="subitems3">C</div>
+		</div>
+		<div class="items item4"> Fourth </div>
+	</div>
+</body>
+</html>

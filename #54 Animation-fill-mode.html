@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Animation-fill-mode </title>
+	<link rel="shortcut icon" type="image/png" href="icons/social_style_1_css3-128.png">
+	<style type="text/css">
+		body{
+			font-family:arila;
+			background:#eee;
+		}
+		.card{
+			width:150px;
+			height:150px;
+			font-size:40px;
+			background:#000;
+			animation:sample 2s
+			linear 2s infinite alternate;
+			animation-fill-mode:both;
+			animation-play-state:paused;
+		}
+		.card:hover{
+			animation-play-state:running;
+		}
+		
+		@keyframes sample{
+			0%{
+				background:yellow;
+				width:250px;
+			}
+			50%{
+				background:green;
+				width:350px;
+			}
+			100%{
+				background:red;
+				width:450px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1> CS Animation-fill-mode & Play-state </h1>
+
+	<div class="card">	</div>
+</body>
+</html>

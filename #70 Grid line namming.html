@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Grid line namming </title>
+	<link rel="shortcut icon" type="image/png" href="icons/social_style_1_css3-128.png">
+	<style type="text/css">
+		body{
+			font-family:arial;
+		}
+		.container{
+			background:#eee;
+			width:720px;
+			margin:45px auto 0px;
+
+			display:grid;
+			grid-template-columns:repeat(3,[col-start] 1fr [col-end]);
+			grid-template-rows:[header-start] 120px [header-end menu-start] 60px [menu-end box-start] 100px [box-end content-start] 400px [content-end fotter-start] 50px [fotter-end];
+			
+			/*First row and second column*/
+			grid-gap:15px;
+		}
+		.items{
+			color:#fff;
+			font-size:20px;
+			font-weight:bolder;
+			padding:10px;
+		}
+		.header{
+			background:orangered;
+			grid-area:header-start /col-start 1 / header-end / col-end -1;
+		}
+		.menu{
+			background:yellowgreen;
+			grid-area:menu-start /col-start 1 / menu-end / col-end -1;
+		}
+		.box1{
+			background:slateblue;
+			grid-row:3 / 3;
+			grid-column:col-start 1 /col-end 1;
+		}
+		.box2{
+			background:hotpink;
+			grid-row:3 / 3;
+			grid-column:col-start 2 /col-end 2;
+		}
+		.content{
+			background:lightgreen;
+			grid-area:content-start /col-start 1 / content-end / col-end 2;
+		}
+		.slidebar{
+			background:royalblue;
+			grid-area:box-start /col-start 3 / content-end / col-end 3;
+		}
+		.fotter{
+			background:goldenrod;
+			grid-area:fotter-start /col-start 1 / fotter-end / col-end 4;
+		}
+	</style>
+</head>
+<body>
+	<h1> LunaticShuvam : CSS Grid Line namming </h1>
+
+	<div class="container"> 
+		<div class="items header">Header</div>
+		<div class="items menu"> Menu </div>
+		<div class="items box1"> Box 1</div>
+		<div class="items box2"> Box2 </div>
+		<div class="items slidebar"> Slidebar </div>
+		<div class="items content"> Content </div>
+		<div class="items fotter"> Fotter </div>
+	</div>
+</body>
+</html>

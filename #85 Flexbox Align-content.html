@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title> Flexbox Align-content </title>
+	<link rel="shortcut icon" type="image/png" href="icons/social_style_1_css3-128.png">
+	<style type="text/css">
+		body{
+			font-family:arial;
+		}
+		.container{
+			background:#eee;
+			height:400px;
+			margin:50px auto 0px;
+			border:3px solid black;
+			padding:10px;
+			width:400px;
+			display:flex;
+			flex-wrap:wrap;
+			align-content:space-evenly;
+		}
+		.item1{
+			background:orangered;
+		}
+		.item2{
+			background:yellowgreen; 
+		}
+		.item3{
+			background:slateblue;
+		}
+		.item4{
+			background:hotpink;
+		}		
+		.item5{
+			background:royalblue;
+		}
+		.item6{
+			background:goldenrod;
+		}
+		.item7{
+			background:lightgreen;
+			grid-column:span 2;
+		}
+		.item8{
+			background:linear-gradient(red,yellow);
+		}
+		.items{
+			padding:10px;
+			font-size:20px;
+			color:#fff;
+			text-align:center;
+			font-weight:bolder;
+			margin:10px;
+		}
+	</style>
+</head>
+<body>
+	<h1> LunaticShuvam : CSS Flexbox Align-content </h1>
+		
+	<div class="container">
+		<div class="items item1"> One</div>
+		<div class="items item2"> Two </div>
+		<div class="items item3"> Three </div>
+		<div class="items item4"> Four </div>
+		<div class="items item5"> Five</div>
+		<div class="items item6"> Six </div>
+		<div class="items item7"> Seven </div>
+		<div class="items item8"> Eight </div>
+	</div>
+</body>
+</html>

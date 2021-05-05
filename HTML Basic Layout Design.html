@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HTML Layout </title>
+	<link rel="shortcut icon" type="image/png" href="icons/22-128.webp">
+	<style type="text/css">
+		body{
+			font-family:arial,helvetica;
+			background-color:slategrey;
+			margin:0;
+			padding:0;
+		}
+		#main{
+			border:5px groove lightgreen;
+			width:80%;
+			margin:0 auto;
+		}
+		#header{
+			margin:0;
+			color:white;
+			padding:10px;
+			height:100px;
+			text-align:center;
+			background:crimson;
+		}
+		#menu li{
+			display:inline-block;
+		}
+		#menu li a{
+			display:block;
+			padding:10px 13px;
+			text-decoration:none;
+			color:black;
+		}
+		#menu a:hover{
+			background:crimson;
+			color:white;
+		}
+		#menu ul{
+			margin:0;
+			padding:0;
+		}
+		#content{
+			box-sizing:border-box;
+			padding:10px;
+			min-height:600px;
+			width:70%;
+			float:left;
+		}
+		#sidebar{
+			min-height:600px;
+			width:30%;
+			float:right;
+			background:lightblue;
+		}
+		#sidebar a{ 
+			text-decoration:none;
+			list-style-type:circle;
+			color:black;
+		}
+		#fotter{
+			background:lightsalmon;
+			clear:both;
+			text-align:right;
+			padding:5px 10px;
+		}
+		@media screen and (max-width:1080px){
+			#main{
+				width:800px;
+			}
+			#content{
+				width:80%;
+			}
+			#sidebar{
+				width:18%;
+			}
+		}
+		@media screen and (max-width:810px){
+			#main{
+				width:500px;
+			}
+		}
+		@media screen and (max-width:510px){
+			#main{
+				width:auto;
+			}
+			#content{
+				width:100%;
+				float:none;
+			}
+			#sidebar{
+				width:100%;
+				float:none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+
+		<div id="header">
+			<h1> 
+				Lunatic Shuvam
+			</h1>
+		</div>
+
+		<div id="menu">
+			<ul>
+				<li> <a href=""> Home</a>
+				</li>
+				<li> <a href=""> About Us</a>
+				</li>
+				<li> <a href=""> Gallery </a>
+				</li>
+				<li> <a href=""> Contact Us</a>
+				</li>
+			</ul>
+		</div>
+			
+		<div id="content">
+			<h2>
+				Design Basic Layout 
+			</h2>
+			<p>
+				Phasellus ac nunc ac tortor porttitor cursus et ac lectus. Morbi eu orci sed quam dignissim ullamcorper accumsan sed neque. Etiam mattis sodales metus non sodales. Nulla porttitor convallis augue, ac ultricies purus vehicula sit amet. Donec placerat tellus dui, eu placerat lorem accumsan vitae. Aliquam mollis dapibus nunc molestie volutpat. Phasellus consequat quis risus vel tristique. Fusce imperdiet nibh porta nibh ornare tempus. Vestibulum vitae metus et nunc porttitor semper. Morbi tincidunt lobortis arcu id tincidunt. Aenean vulputate nec purus ultricies finibus. Nam pellentesque odio dui, ut egestas risus consequat a.
+			</p>
+			<p>
+				Phasellus ac nunc ac tortor porttitor cursus et ac lectus. Morbi eu orci sed quam dignissim ullamcorper accumsan sed neque. Etiam mattis sodales metus non sodales. Nulla porttitor convallis augue, ac ultricies purus vehicula sit amet. Donec placerat tellus dui, eu placerat lorem accumsan vitae. Aliquam mollis dapibus nunc molestie volutpat. Phasellus consequat quis risus vel tristique. Fusce imperdiet nibh porta nibh ornare tempus. Vestibulum vitae metus et nunc porttitor semper. Morbi tincidunt lobortis arcu id tincidunt. Aenean vulputate nec purus ultricies finibus. Nam pellentesque odio dui, ut egestas risus consequat a.
+			</p>
+		</div>
+
+		<div id="sidebar">
+			<ul>
+				<li> <a href=""> Home</a>
+				</li>
+				<li> <a href=""> About Us</a>
+				</li>
+				<li> <a href=""> Gallery </a>
+				</li>
+				<li> <a href=""> Contact Us</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="fotter">
+			LunaticShuvam@copyright 2020.
+		</div>
+
+	</div>
+</body>
+</html>

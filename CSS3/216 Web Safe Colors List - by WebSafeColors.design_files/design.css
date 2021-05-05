@@ -1,0 +1,72 @@
+* {
+    margin:0;
+    padding:0;
+    text-indent:0;
+}
+body {
+    background-color: #000000;
+    font-family:"ff-tisa-sans-web-pro", sans-serif;
+    padding:50px;
+    position:relative;
+}
+
+header {
+    font-size:1rem;
+}
+header a {
+    text-decoration: none;
+}
+header .one {
+    color:#ffffff;
+}
+header .two {
+    color:#dddddd;
+}
+header .three {
+    color:#bbbbbb;
+}
+header .four {
+    color:#999999;
+}
+header span::after {
+    content: " ";
+    width:0;
+    display:inline-block;
+}
+
+
+section#ad {
+    text-align: center;
+    margin:20px 0;
+}
+
+
+body::after {
+    height:80px;
+    content:" ";
+    color:white;
+    display:block;
+}
+footer {
+    color:#dddddd;
+    font-size:0.9rem;
+    text-align:center;
+    position:absolute;
+    bottom:30px;
+    left:0;
+    width:100%;
+}
+footer a {
+    color:#ffffff;
+}
+footer a.current {
+    text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    body {
+        padding: 20px;
+    }
+}

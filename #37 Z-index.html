@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Z-index </title>
+	<link rel="shortcut icon" type="image/png" href="icons/social_style_1_css3-128.png">
+	<style type="text/css">
+		div{
+			width:200px;
+			height:200px;
+			position:absolute;
+			border:2px solid black;
+			font-size:25px;
+		}
+		#box1{
+			background:pink;
+			top:100px;
+			left:50px;
+			z-index:3;
+		}
+		#box2{
+			background:darkseagreen;
+			top:150px;
+			left:100px;
+		}
+		#box3{
+			background:peachpuff;
+			top:200px;
+			left:150px;
+			z-index:1;
+		}
+		#box4{
+			background:violet;
+			top:250px;
+			left:200px;
+		}
+		#box5{
+			background:yellow;
+			top:300px;
+			left:250px;
+			z-index:2;
+		}
+	</style>
+</head>
+<body>
+	<h1> LunaticShuvam CSS Z-index</h1>
+	<div id='box1'>A</div>
+	<div id='box2'>B</div>
+	<div id='box3'>C</div>
+	<div id='box4'>D</div>
+	<div id='box5'>E</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title> Flexbox Align Form Elements  </title>
+	<link rel="shortcut icon" type="image/png" href="icons/social_style_1_css3-128.png">
+	<style type="text/css">
+		body{
+			font-family:arial;
+		}
+		#wrapper{
+			background:#eee;
+			list-style:none;
+			margin:50px;
+			padding:20px;
+		}
+		#wrapper li{
+			display:flex;
+			padding:5px 0;
+			justify-content:flex-end;
+		}
+		#wrapper li label{
+			flex:1 ;
+		}
+
+		@media screen and (min-width:300px) and (max-width:499px){
+			#wrapper li{
+				flex-direction:column;
+			}			
+			#wrapper li input{
+				flex:3;
+			}
+		}
+		@media screen and (min-width:500px){	
+			#wrapper li input{
+				flex:3;
+			}
+		}
+		@media screen and (min-width:768px){	
+			#wrapper li input{
+				flex:4;
+			}
+		}
+		@media screen and (min-width:992px){	
+			#wrapper li input{
+				flex:6;
+			}
+		}		
+		@media screen and (min-width:1200px){	
+			#wrapper li input{
+				flex:8;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1> 
+		LunaticShuvam : CSS Flexbox Align Form Elements 
+	</h1>
+
+	<form>
+		<ul id="wrapper">
+			<li>
+				<label for=''>Name</label>
+				<input type="text" name="">
+			</li>
+			<li>
+				<label for=''>Class</label>
+				<input type="text" name="">
+			</li>
+			<li>
+				<label for=''>Email address</label>
+				<input type="email" name="">
+			</li>
+			<li>
+				<button type="submit">Save</button>
+			</li>
+		</ul>
+	</form>
+</body>
+</html>

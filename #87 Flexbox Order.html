@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title> Flexbox Order </title>
+	<link rel="shortcut icon" type="image/png" href="icons/social_style_1_css3-128.png">
+	<style type="text/css">
+		body{
+			font-family:arial;
+		}
+		.container{
+			background:#eee;
+			height:150px;
+			margin:50px auto 0px;
+			border:3px solid black;
+			padding:10px;
+			width:420px;
+			display:flex;
+		}
+		.item1{
+			background:orangered;
+			order:2;
+		}
+		.item2{
+			background:yellowgreen;
+			order:1; 
+		}
+		.item3{
+			background:slateblue;
+			order:0;
+		}
+		.item4{
+			background:hotpink;
+			order:-1;
+		}		
+		.item5{
+			background:royalblue;
+			order:-2;
+		}
+		/*.item6{
+			background:goldenrod;
+		}
+		.item7{
+			background:lightgreen;
+			grid-column:span 2;
+		}
+		.item8{
+			background:linear-gradient(red,yellow);
+		}*/
+		.items{
+			padding:10px;
+			font-size:20px;
+			color:#fff;
+			text-align:center;
+			font-weight:bolder;
+			margin:10px;
+		}
+	</style>
+</head>
+<body>
+	<h1> LunaticShuvam : CSS Flexbox Order </h1>
+		
+	<div class="container">
+		<div class="items item1"> One</div>
+		<div class="items item2"> Two </div>
+		<div class="items item3"> Three </div>
+		<div class="items item4"> Four </div>
+
+		<div class="items item5"> Five</div>
+		<!-- <div class="items item6"> Six </div>
+		<div class="items item7"> Seven </div>
+		<div class="items item8"> Eight </div> -->
+	</div>
+</body>
+</html>

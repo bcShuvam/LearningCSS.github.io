@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Grid area namming </title>
+	<link rel="shortcut icon" type="image/png" href="icons/social_style_1_css3-128.png">
+	<style type="text/css">
+		body{
+			font-family:arial;
+		}
+		.container{
+			background:#eee;
+			width:720px;
+			margin:45px auto 0px;
+
+			display:grid;
+			grid-template-columns:repeat(3,1fr);
+			grid-template-rows:120px 60px 100px 400px 50px;
+			grid-gap:15px;
+			grid-template-areas:
+				'header header header' 
+				'menu menu menu'
+				'box1 box2 sidebar'
+				'content content sidebar'
+				'. fotter fotter' ;
+			/*.'dot' is used leave the column blank or unfill.*/
+		}
+		.items{
+			color:#fff;
+			font-size:20px;
+			font-weight:bolder;
+			padding:10px;
+		}
+		.header{
+			background:orangered;
+			grid-area: header ;
+		}
+		.menu{
+			background:yellowgreen;
+			grid-area: menu ;
+		}
+		.box1{
+			background:slateblue;
+			grid-area: box1 ;
+		}
+		.box2{
+			background:hotpink;
+			grid-area: box2 ;
+		}
+		.slidebar{
+			background:royalblue;
+			grid-area: sidebar ;
+		}
+		.content{
+			background:lightgreen;
+			grid-area: content ;
+		}
+		.fotter{
+			background:goldenrod;
+			grid-area: fotter ;
+		}
+	</style>
+</head>
+<body>
+	<h1> LunaticShuvam : CSS Grid area namming </h1>
+
+	<div class="container"> 
+		<div class="items header">Header</div>
+		<div class="items menu"> Menu </div>
+		<div class="items box1"> Box 1</div>
+		<div class="items box2"> Box2 </div>
+		<div class="items slidebar"> Slidebar </div>
+		<div class="items content"> Content </div>
+		<div class="items fotter"> Fotter </div>
+	</div>
+</body>
+</html>

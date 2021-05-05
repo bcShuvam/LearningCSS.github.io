@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Transform </title>
+	<link rel="shortcut icon" type="image/png" href="icons/social_style_1_css3-128.png">
+	<style type="text/css">
+		body{
+			font-family:arila;
+			font-size:18px;
+		}
+		div{
+			box-sizing:border-box;	
+		}
+		.parent{
+			width:350px;
+			height:250px;
+			background:grey;
+			margin:100px 0 0 100px;
+			text-align:center;
+			perspective:800px;
+			transform:rotateY(30deg);
+			transform-style:preserve-3d;
+		}
+		#box{
+			width:350px;
+			height:250px;
+			background:pink;
+			padding:20px;
+			transform-origin:bottom;
+			transform:rotateX(300deg);
+		}
+	</style>
+</head>
+<body>
+	<h1> CSS Transform </h1>
+
+	<div class="parent">       
+		<div id="box"> 
+			Lunatic Shuvam 
+		</div>
+	</div>
+</body>
+</html>

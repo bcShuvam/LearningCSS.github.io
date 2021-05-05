@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title> Flexbox Nested Flex </title>
+	<link rel="shortcut icon" type="image/png" href="icons/social_style_1_css3-128.png">
+	<style type="text/css">
+		body{
+			font-family:arial;
+		}
+		.container{
+			background:#eee;
+			margin:50px;
+			border:3px solid #000;
+			padding:0px;
+
+			display:flex;
+			flex-direction:column;
+		}
+		.item1{
+			background:orangered;
+		}
+		.item2{
+			background:yellowgreen; 
+			display:flex;
+		}
+		.item2 > .subitem{
+			background:wheat;
+			color:MEDIUMPURPLE; 
+			flex-grow:1;
+			margin:5px;
+		}
+		.item3{
+			background:slateblue;
+		}
+		.subitem4{
+			background:;
+		}		
+		.subitem5{
+			background:;
+		}
+		.subitem6{
+			background:;
+		}
+		.items{
+			padding:10px;
+			font-size:20px;
+			text-align:center;
+			color:#fff;
+			font-weight:bolder;
+			height:100px;
+		}
+	</style>
+</head>
+<body>
+	<h1> LunaticShuvam : CSS Flexbox Nested Flex </h1>
+		
+	<div class="container">
+		<div class="items item1"> One </div>
+		<div class="items item2"> 
+			<div class="subitem subitem4"> A </div>
+			<div class="subitem subitem5"> B</div>
+		 	<div class="subitem subitem6"> C </div>
+		</div>
+		<div class="items item3"> Three </div>
+	</div>
+</body>
+</html>
